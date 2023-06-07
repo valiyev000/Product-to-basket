@@ -1,0 +1,58 @@
+body{
+    padding: 0 27px;
+}
+nav{
+    width: 100%;
+    height: 80px;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    >*{
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        font-size: 15px;
+        line-height: 24px;
+        color: #000;
+        transition: 0.3s all ease-in-out;
+        height: 50px;
+        padding: 0 5px;
+        text-decoration: none;
+        >.productCounter{
+            width: 28px;
+            height: 28px;
+            background: #DE3D31;
+            border-radius: 10px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Library
+
+.selectedNav{
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
