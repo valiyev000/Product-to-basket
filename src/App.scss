@@ -32,6 +32,66 @@ nav{
     }
 }
 
+.homePage{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    column-gap: 2.5%;
+    row-gap: 25px;
+    padding-top: 20px;
+    .item{
+        border: 1px solid green;
+        width: 23.1%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 0 15px 0;
+        >:nth-child(1){
+            height: 180px;
+        }
+        .rating-bar{
+            margin-top: 30px;
+            >img{
+                cursor: pointer;
+            }
+        }
+        .item-title{
+            margin-top: 20px;
+            margin-bottom: 8px;
+            font-size: 15px;
+            line-height: 24px;
+            letter-spacing: 0.15px;
+            color: rgba(0, 0, 0, 0.87);
+        }
+        .item-price{
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 28px;
+            letter-spacing: 0.15px;
+            color: rgba(0, 0, 0, 0.87);
+            margin-bottom: 30px;
+        }
+        .add-btn{
+            width: 90%;
+            height: 40px;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0.1px;
+            color: rgba(0, 0, 0, 0.87);
+            background: #FFFFFF;
+            outline: 1px solid rgba(0, 0, 0, 0.12);
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s all ease-in-out;
+            &:hover{
+                outline-offset: 5px;
+                outline-color: rgba(255, 3, 3, 0.12);
+            }
+        }
+    }
+}
 
 
 
