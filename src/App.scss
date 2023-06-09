@@ -4,7 +4,8 @@ body{
 nav{
     width: 100%;
     height: 80px;
-    border: 1px solid red;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -47,11 +48,15 @@ nav{
         flex-direction: column;
         align-items: center;
         padding: 30px 0 15px 0;
+        overflow: hidden;
+        height: 480px;
         >:nth-child(1){
             height: 180px;
         }
         .rating-bar{
             margin-top: 30px;
+            display: flex;
+            gap: 5px;
             >img{
                 cursor: pointer;
             }
@@ -63,6 +68,8 @@ nav{
             line-height: 24px;
             letter-spacing: 0.15px;
             color: rgba(0, 0, 0, 0.87);
+            width: 80%;
+            text-align: center;
         }
         .item-price{
             font-weight: 500;
@@ -93,7 +100,65 @@ nav{
     }
 }
 
-
+.basketPage{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 15px 25px;
+    margin-top: 20px;
+    .item{
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        width: 100%;
+        border-radius: 10px;
+        height: 220px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 3%;
+        gap: 25px;
+        img{
+            max-width: 250px;
+            max-height: 90%;
+            border-radius: 10px;
+        }
+        .about{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            .title{
+                font-weight: 500;
+                font-size: 24px;
+            }
+            .description{
+                font-size: 16px;
+            }
+        }
+        .price{
+            width: 100px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            border-radius: 10px;
+            font-weight: 500;
+            scale: 1.2;
+        }
+        .remove{
+            cursor: pointer;
+            min-width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        }
+    }
+}
 
 
 

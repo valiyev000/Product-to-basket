@@ -1,16 +1,23 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Item from './Item'
+import ContentApi from './ContentApi'
 
 export default function HomePage() {
-  return (
-    <main className='homePage'>
-        <Item />
-        <Item />
-        <Item />
-        <Item />
-        <Item />
-        <Item />
-        <Item />
-    </main>
-  )
+
+    const { data } = useContext(ContentApi)
+
+    console.log("Homepage render");
+
+    
+    return (
+        <main className='homePage'>
+            
+            {data && data.map((e,i)=>
+              <Item key={e.id} product={e} />
+            )}
+
+            
+            
+        </main>
+    )
 }
